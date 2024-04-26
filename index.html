@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Juego de rol</title>
+    <link rel="stylesheet" type="text/css" href="juegoRol.css">
+    <link rel="icon" href="img/faviconJ_2.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Título principal de la página. -->
+    <div class="titulo-bg">
+        <h1>JUEGO DE ROL</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="jugador" onclick="mostrarInfo('Yuurey')">
+            <img src="img/yuurey.jpg" alt="Jugador 1">
+            <div class="nombre">· Yuurey ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Lunara')">
+            <img src="img/lunara.jpg" alt="Jugador 2">
+            <div class="nombre">· Lunara ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Kaelthas')">
+            <img src="img/kaelthas.jpg" alt="Jugador 3">
+            <div class="nombre">· Kaelthas ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Tresh')">
+            <img src="img/tresh.jpg" alt="Jugador 4">
+            <div class="nombre">· Tresh ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Aloy')">
+            <img src="img/aloy.jpg" alt="Jugador 5">
+            <div class="nombre">· Aloy ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Jinx')">
+            <img src="img/jinx.jpg" alt="Jugador 6">
+            <div class="nombre">· Jinx ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Riven')">
+            <img src="img/riven.jpg" alt="Jugador 7">
+            <div class="nombre">· Riven ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Kratos')">
+            <img src="img/kratos.jpg" alt="Jugador 8">
+            <div class="nombre">· Kratos ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Sombra')">
+            <img src="img/sombra.jpg" alt="Jugador 9">
+            <div class="nombre">· Sombra ·</div>
+        </div>
+
+        <div class="jugador" onclick="mostrarInfo('Ezio')">
+            <img src="img/ezio.jpg" alt="Jugador 10">
+            <div class="nombre">· Ezio ·</div>
+        </div>
+
+    </div>
+
+    <!-- mostrar información de los jugadores -->
+    <div id="infoJugadores" class="mostrar"></div>
+
+
+
+
+    <center>
+        <!-- Zona para crear los selectores -->
+        <select id="selectorHabilidad">
+            <!-- Opción inicial que indica la acción a realizar. -->
+            <option value="">Seleccione una habilidad</option>
+        </select>
+
+        <select id="selectorNivelMinimo">
+            <!-- Opción inicial que indica la acción a realizar. -->
+            <option value="">Seleccione un nivel mínimo</option>
+        </select>
+
+        <!-- botón para hacer el filtrado -->
+        <button type="submit" id="aplicarFiltro">Buscar</button>
+
+
+        <!-- aquí se mostraran los jugadores filtrado -->
+        <div id="jugadoresFiltrados"></div>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>· Página Web creada por: <font class="pie">Yohanna Gelo</font> · Asignatura: <font class="pie">Lenguaje
+                    de Marcas 2023/24</font> · Curso: <font class="pie">1º DAW</font>
+            </p>
+        </footer>
+    </center>
+
+
+    <script src="juegoRol.js"></script> <!-- Para vincular un documento con código javascript -->
+
+</body>
+
+</html>
